@@ -21,6 +21,8 @@ constructor() { }
 
   test(){
     this.message = this.hello.message
+    this.message.push({data:'gdaj',id:'6493287'})
+    console.log(this.message.length)
     console.log(this.message)
   }
 
