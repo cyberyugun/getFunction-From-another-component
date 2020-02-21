@@ -1,4 +1,4 @@
-import { Component , ViewChild, AfterViewInit} from '@angular/core';
+import { Component , ViewChild} from '@angular/core';
 import { HelloComponent } from './hello.component';
 
 @Component({
@@ -12,14 +12,15 @@ export class AppComponent  {
 
 constructor() { }
 
-  message:string;
+  message:any;
 
-  ngAfterViewInit() {
-    this.message = this.hello.message
-    //console.log(this.message)
-  }
+  // ngAfterViewInit() {
+  //   this.message = this.hello.message
+  //   //console.log(this.message)
+  // }
 
   test(){
+    this.message = this.hello.message
     console.log(this.message)
   }
 
